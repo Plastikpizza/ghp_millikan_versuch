@@ -5,14 +5,31 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{pdflscape}
 \usepackage{makeidx}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
 \author{Lukas Hassel, David Schlosser und Stefan Schmidt}
 \title{Millikanversuch}
+\cfoot{Lukas Hassel, David Schlosser und Stefan Schmidt}
+\lhead{Millikanversuch}
+\rhead{\thepage}
 \begin{document}
 \maketitle
+\pagestyle{fancy}
+
+% Aufgaben:
+% 1.Versuchsbeschreibung
+% 2.Fragen aus Vorbereitung
+% 3.Tabelle mit Messungen
+% 4.eine Ladungsbestimmung von e als Bespiel
+% 5.ein Graph mit unseren Ergebnissen UND mit unserer Interpretertion
+%    a.Plot 1: x -> Nr. des Tropfen; y -> errechnete Ladung
+%    b.Plot 2: x -> Spannung; y -> Aufstiegsgeschwindigkeit
+% Wenn fertig -> per mail an daniel.schneider@uni-siegen.de
+
 \input{beschreibung.tex}
 \input{antworten_versuchsvorbereitung.tex}
-\input{tabelle.tex}
 \input{mathematik.tex}
+\input{tabelle.tex}
 \end{document}
