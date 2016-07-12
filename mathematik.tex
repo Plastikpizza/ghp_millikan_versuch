@@ -1,0 +1,21 @@
+\section*{Beispielrechnung Messung 1}
+Gemessene Werte: \\
+$U = 2000V,		\\
+t_f = 7,68s,	\\
+t_r = 22,59s,	\\
+d = 0,001m 		\\ $
+\\
+Aus der gemessenen Fallzeit $t_f$ und der Entfernung $d$ lässt sich die Fallgeschwindigkeit $V_f$ mit der Formel $V_f = \frac{d}{t_f}$ errechnen. \\
+$V_f = \frac{0,001m}{7,68s} = 1,302 \cdot 10^{-4} \frac{m}{s}$	\\
+Analog lässt sich die Steigzeit $V_r$ errechnen. \\
+$V_r = \frac{0,001m}{22,59s} = 4,426 \cdot 10^{-5} \frac{m}{s}$ \\
+\\ Der unbekannte Radius $r$ des Öltropfens lässt sich mit der Formel $r=\sqrt{(\frac{b}{2p})^{2} + \frac{9 \cdot \eta \cdot V_f}{2\cdot \rho \cdot g}} - \frac{b}{2p}$ berechnen. Dabei ist $b$ eine Korrekturkonstatnte mit $b=8,2 \cdot 10^{-3} Pa \cdot m$, $p$ der barometrische Luftdruck mit $p = 1013,2 hPa$, $\eta$ die Viskosität der Luft mit $\eta = 1,8 \cdot 10^{-5} \frac{Ns}{m^2}$, $\rho$ die Dichte des Öls mit $\rho = 886 \frac{kg}{m^3}$ und $g$ die Erdbeschleunigung mit $g = 9,81\frac{N}{kg}$.
+\\
+$r=\sqrt{\frac{8,2\cdot10^{-3}Pa\cdot m}{2\cdot 1013,2 hPa}+\frac{9\cdot 1,8\cdot 10^{-5}Ns/m^2 \cdot 1,302 \cdot 10^{-4} m/s}{2\cdot 886kg/m^3 \cdot 9,81N/kg}}-\frac{8,2\cdot 10^{-3}Pa\cdot m}{2\cdot 1013,2 hPa} = 1,0681\cdot 10^{-6}m$
+\\ \\
+Mit dem nun bekannten Radius lässt sich die Masse $m$ des Öltröpfchens berechenen mit $m=\frac{4}{3}\cdot \pi \cdot r^3 \cdot \rho = \frac{4}{3} \cdot \pi \cdot (1,0681\cdot 10^{-6}m)^3 \cdot 886kg/m^3 = 4,5223\cdot 10^{-15}kg$.
+\\ \\
+Zur Berechnung der Ladung ist die Letzte Unbekannte die Feldstärke des elektrischen Feldes, die sich mit der Formel $E=\frac{U}{d} = \frac{2000V}{7,62\cdot 10^{-3}m} = 262,47\frac{kV}{m}$ berechnen lässt.
+\\ \\
+Schlussendlich ergibt sich nun die Ladung des Öltröpfchens mit \\
+$q=\frac{m\cdot g \cdot (V_r + V_f)}{E \cdot V_f}=\frac{4,5223 \cdot 10^{-15}kg \cdot 9,81N/kg\cdot (4,426\cdot 10^{-5}m/s + 1,302\cdot 10^{-4}m/s)}{262,47kV/m \cdot 1,302\cdot 10^{-4}m/s}=2,2648 \cdot 10^{-19}C$
